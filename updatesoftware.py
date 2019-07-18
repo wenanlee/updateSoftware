@@ -1,15 +1,18 @@
 import zipfiles
 import urllib.request
 import urllib
+import json
+
 def listzipfilesinfo(path):
     z=zipfiles.ZipFile(path,'r')
     for file in z.namelist():
         z.extract(file,"./")
+        
 def update():
     page = urllib.request.urlopen("http://www.ugmax.cn/psychology/version.html")
     serverVersion=page.read().decode()
     localVersion=0
-    with open('version',"r") as f:    #设置文件对象
+    with open('version.txt',"r") as f:    #设置文件对象
         localVersion = f.read()
         print(serverVersion,"------",localVersion)
         if serverVersion==localVersion:
