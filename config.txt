@@ -1,0 +1,4 @@
+{
+    "VersionUrl":"http://www.ugmax.cn/psychology/version.html"
+
+}
