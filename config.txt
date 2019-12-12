@@ -1,4 +1,1 @@
-{
-    "VersionUrl":"http://www.ugmax.cn/psychology/version.html"
-
-}
+{"VersionUrl": "http://api.ugmax.cn:8000/ugwpage/version.html", "DownloadUrl": "http://api.ugmax.cn:8000/ugwpage/files/ugcw.zip", "LocalVersion": "ugc0"}
